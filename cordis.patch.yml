@@ -1,0 +1,3 @@
+- insert:
+    - id: bot-console
+      name: 'dsh-bot-console'

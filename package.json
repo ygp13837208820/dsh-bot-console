@@ -1,0 +1,35 @@
+{
+  "name": "dsh-bot-console",
+  "displayName": "多 Bot 编排",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Settings page that edits the Bot list used by the skill-orchestrator workflow (any number of bots, any id, per-bot vars/anchors/receiptAnchors), saved as JSON next to the skill. · 设置页：任意增删子代理、自己起 id、配 vars/契约锚词/回执锚词；保存为 skill 旁的 bots.json。",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-settings"]
+    }
+  },
+  "keywords": ["dsh", "dsh-plugin", "dsh-bundle", "orchestrator", "settings"],
+  "license": "MIT"
+}
