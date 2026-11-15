@@ -6,6 +6,12 @@
 
 **设置 → 多 Bot 编排**
 
+## 设置页长什么样
+
+![Bot 卡片：id、显示名、启用、顺序按钮、三段文本、vars / anchors / receiptAnchors](docs/factcheck-card.png)
+
+<sub>上面是第 4 个 Bot（`factcheck`，事实核查）的卡片：左边 `id` 可改，右边三个按钮管启用与流水线顺序（↑ ↓）、删除（二次确认）；下面三段是派发正文，再往下是 `vars` / `anchors` / `receiptAnchors` 三组契约标签，回车即添加、点 × 移除。</sub>
+
 ## v0.2（2026-11-15）改了什么
 
 | 之前 | 现在 |
